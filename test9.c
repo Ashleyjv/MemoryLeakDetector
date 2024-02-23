@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char c, d;
+char *x;
+char *y;
+
+
+struct s{
+    int value;
+    char *p;
+    char *q;
+} s1, s0;
+
+int main(){
+  c = getc(stdin);
+  d = getc(stdin);
+
+  struct s * s2 = &s1;
+
+  s1.p = malloc(10);
+  y = s2->p;
+   
+  free(x);
+  free(y);
+}
